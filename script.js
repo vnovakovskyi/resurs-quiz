@@ -41,26 +41,6 @@ const questions = [
         correct: "1.0"
     },
     {
-        question: "<p>Can this throw NPE?</p>" +
-            "<p>\"hello\".equals(null);</p>",
-        options: [
-            "Yes",
-            "No",
-            "Only if Java version < 8",
-            "Only if JVM is angry"],
-        correct: "No"
-    },
-    {
-        question: "<p>What’s printed?</p>" +
-            "<p>System.out.println(1.0 - 0.9 == 0.1);</p>",
-        options: [
-            "true",
-            "false",
-            "Compilation error",
-            "JVM crash"],
-        correct: "false"
-    },
-    {
         question: "<p>How many iterations it will go?</p>" +
             "<p>for (float f = 0.1f; f != 1.0f; f += 0.1f)</p>" +
             "<p>System.out.println(f);</p>",
@@ -81,8 +61,7 @@ function render() {
         app.innerHTML = `
       <div class="container">
         <h1>Welcome to the Quiz</h1>
-        <p>This is a quick quiz for you to have fun. Click the button below to start.</p>
-        <p>After you are done with all questions (that could be funny and sometimes challenged) you could get a prize!</p>
+        <p>Click the button below to start the quiz.</p>
         <p> </p>
         <img src="https://www.resursbank.se/image/1200xAUTO/uploads/2018/02/Resurs_logo_vertical_RGB_BLACK.png" alt="Resurs Image">
         <button onclick="startQuiz()">Start Quiz</button>
